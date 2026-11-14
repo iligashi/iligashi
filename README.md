@@ -58,28 +58,36 @@ Full-stack property marketplace for buyers, sellers, renters, agents and admins:
 
 `React` `Vite` `Tailwind` `Express` `MongoDB` `Socket.IO` `Jest` `Docker` `GitHub Actions`
 
+### 🚗 Nexora Rent a Car · [Live demo](https://nexorarent.vercel.app) · [Code](https://github.com/iligashi/nexorarent)
+
+<a href="https://nexorarent.vercel.app"><img src="https://raw.githubusercontent.com/iligashi/nexorarent/main/docs/screenshots/homepage.png" alt="Nexora Rent a Car" width="100%"></a>
+
+Full-stack vehicle-rental platform: fleet browsing with filters, a reservation wizard for signed-in customers and guests, and an admin back office for vehicles, reservations, customers, pricing, maintenance and revenue. Reservations are checked for overlaps and serialized per car in MySQL, sessions use hashed rotating refresh tokens, and admin routes are role-based. Bilingual (English/Albanian), with unit, database-integration and Playwright tests running in CI.
+
+`Next.js` `TypeScript` `Express` `MySQL` `Redis` `Docker` `Playwright` `GitHub Actions`
+
+### 🖼️ oneposters · [Live site](https://oneposters.vercel.app) · [Code](https://github.com/iligashi/oneposters)
+
+<a href="https://oneposters.vercel.app"><img src="https://raw.githubusercontent.com/iligashi/oneposters/main/docs/screenshots/home.webp" alt="oneposters" width="100%"></a>
+
+Online poster shop with a custom-print studio: customers upload their own artwork, style it, preview it in a room mockup and order it as a print. Prices are recomputed on the server and each order is saved in one database transaction. The staff admin covers products, orders with CSV export, a studio production queue, discounts and an audit log, protected by Postgres row-level security, staff roles and mandatory TOTP 2FA.
+
+`Next.js 16` `React 19` `TypeScript` `Supabase` `Postgres RLS` `Vercel Blob` `Vitest` `GitHub Actions`
+
 ### More projects
 
 | Project | What it is | Stack |
 |---|---|---|
-| [**Nexora Rent a Car**](https://github.com/iligashi/nexorarent) | Full-stack vehicle-rental platform: fleet browsing, reservations and rental management | Next.js · Express · MySQL · Docker |
-| [**EduCore LMS & DMS**](https://github.com/iligashi/EduCore) | Learning and digital management system with live updates and analytics | React · TypeScript · Express · MySQL · MongoDB |
-| [**Services Marketplace**](https://github.com/iligashi/Services-Marketplace) | Local services marketplace with an API, admin dashboard and mobile app | Express · React · React Native/Expo · Redis |
-| [**Task Manager**](https://github.com/iligashi/Task-Manager) | Collaborative Kanban task manager with teams, roles and file attachments | Next.js · MongoDB · JWT · Vercel Blob |
-| [**Sword Shop**](https://github.com/iligashi/Sword-shop) | E-commerce store with Stripe checkout, order tracking and admin panel | React · Laravel · MySQL · Stripe |
+| [**Flux Dekor**](https://github.com/iligashi/flux-dekor) · [live](https://flux-dekor.com) | Production e-commerce platform for a furniture and home-goods retailer in Kosovo: storefront, checkout with server-side pricing and atomic stock, and an admin back office with revenue dashboard | Next.js 16 · TypeScript · Supabase · Postgres RLS |
+| [**DiasporaConnect**](https://github.com/iligashi/albanian-diaspora-app-ka) · [live](https://v0-new-project-o1tgmu4ozsm.vercel.app) | Three-sided marketplace for people abroad to pay bills, send gifts and book home services for family in Kosovo, with shared family wallets, recurring plans and photo proof | Next.js 15 · React 19 · TypeScript · MongoDB |
+| [**Programuesi i Veturave**](https://github.com/iligashi/programuesi-i-veturave) · [live](https://programuesiiveturave.netlify.app) | Bilingual site for a car-coding business, with type-checked translations, URL-based filters, SEO structured data and accessibility linting | React · TypeScript · Vite · Tailwind |
+| [**Services Marketplace**](https://github.com/iligashi/Services-Marketplace) | Local services marketplace with an API, admin dashboard and mobile app | Express · MySQL · Redis · React Native/Expo |
+| [**EduCore LMS & DMS**](https://github.com/iligashi/EduCore) | Learning and document management system with live updates and analytics | React · TypeScript · Express · MySQL · MongoDB |
 
 ### 🏢 Client websites (Nexora Agency)
-- [**Nobel Venues**](https://github.com/iligashi/Nobel): bilingual luxury event-venue site (React, Tailwind, Framer Motion)
+- [**Nobel Venues**](https://github.com/iligashi/Nobel) · [hotelnobel-ks.com](https://hotelnobel-ks.com/): bilingual luxury event-venue site (React, Tailwind, Framer Motion)
 - [**74 Lounge Bar**](https://github.com/iligashi/74-lounge-bar): restaurant website and management API (Next.js, Express, MySQL)
-- [**Poli Klinika Drenas**](https://github.com/iligashi/Poliklinika): clinic website with doctor profiles and appointment booking
-- [**Mobileria Dardania**](https://github.com/iligashi/flux-dekor): furniture store website (Next.js, TypeScript)
-
-## 📊 GitHub stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=iligashi&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iligashi&layout=compact&hide_border=true" alt="Top languages" />
-</p>
+- [**Poli Klinika Drenas**](https://github.com/iligashi/Poliklinika): clinic website with services, doctor profiles and appointment requests (React, Tailwind)
 
 ---
 
