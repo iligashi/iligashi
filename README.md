@@ -72,7 +72,7 @@ Full-stack property marketplace for buyers, sellers, renters, agents and admins:
 - [**Nobel Venues**](https://github.com/iligashi/Nobel): bilingual luxury event-venue site (React, Tailwind, Framer Motion)
 - [**74 Lounge Bar**](https://github.com/iligashi/74-lounge-bar): restaurant website and management API (Next.js, Express, MySQL)
 - [**Poli Klinika Drenas**](https://github.com/iligashi/Poliklinika): clinic website with doctor profiles and appointment booking
-- [**Mobileria Dardania**](https://github.com/iligashi/MoblieriaDardania): furniture store website (Next.js, TypeScript)
+- [**Mobileria Dardania**](https://github.com/iligashi/flux-dekor): furniture store website (Next.js, TypeScript)
 
 ## 📊 GitHub stats
 
