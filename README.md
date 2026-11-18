@@ -35,10 +35,14 @@ I build full-stack web and mobile products end to end, from database design and 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 
 **Data & infrastructure**
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
@@ -50,13 +54,13 @@ I build full-stack web and mobile products end to end, from database design and 
 
 ## 🚀 Featured projects
 
-### 🏠 RealEstate Marketplace · [Live demo](https://realestate-orpin-eight-16.vercel.app) · [Code](https://github.com/iligashi/realestate)
+### 🖼️ oneposters · [Live site](https://oneposters.vercel.app) · [Code](https://github.com/iligashi/oneposters)
 
-<a href="https://realestate-orpin-eight-16.vercel.app"><img src="https://raw.githubusercontent.com/iligashi/realestate/main/docs/screenshots/home.png" alt="RealEstate Marketplace" width="100%"></a>
+<a href="https://oneposters.vercel.app"><img src="https://raw.githubusercontent.com/iligashi/oneposters/main/docs/screenshots/home.webp" alt="oneposters" width="100%"></a>
 
-Full-stack property marketplace for buyers, sellers, renters, agents and admins: listings with search, real-time chat, viewing bookings, a wishlist, seller analytics and admin moderation. Secure httpOnly-cookie sessions, CSRF protection, input sanitizing, 49 automated tests and CI. Deployed on Vercel, Render and MongoDB Atlas.
+Online poster shop with a custom-print studio: customers upload their own artwork, style it, preview it in a room mockup and order it as a print. Prices are recomputed on the server and each order is saved in one database transaction. The staff admin covers products, orders with CSV export, a studio production queue, discounts and an audit log, protected by Postgres row-level security, staff roles and mandatory TOTP 2FA.
 
-`React` `Vite` `Tailwind` `Express` `MongoDB` `Socket.IO` `Jest` `Docker` `GitHub Actions`
+`Next.js 16` `React 19` `TypeScript` `Supabase` `Postgres RLS` `Vercel Blob` `Vitest` `GitHub Actions`
 
 ### 🚗 Nexora Rent a Car · [Live demo](https://nexorarent.vercel.app) · [Code](https://github.com/iligashi/nexorarent)
 
@@ -66,13 +70,19 @@ Full-stack vehicle-rental platform: fleet browsing with filters, a reservation w
 
 `Next.js` `TypeScript` `Express` `MySQL` `Redis` `Docker` `Playwright` `GitHub Actions`
 
-### 🖼️ oneposters · [Live site](https://oneposters.vercel.app) · [Code](https://github.com/iligashi/oneposters)
+### ⚙️ Nexora Rent API (.NET) · [Code](https://github.com/iligashi/nexorarent-api)
 
-<a href="https://oneposters.vercel.app"><img src="https://raw.githubusercontent.com/iligashi/oneposters/main/docs/screenshots/home.webp" alt="oneposters" width="100%"></a>
+An incremental, zero-downtime migration of the Nexora Rent a Car backend from Express to ASP.NET Core, one route group at a time. Both backends share the same MySQL database and JWT secret, and Next.js rewrites decide which one serves each route, so the frontend does not change. Parity tests send the same requests to Express and .NET and require identical responses; integration tests run against MySQL in Docker via Testcontainers. **Partial migration:** public read endpoints, customer reservations, reviews and `GET /auth/me` are ported so far.
 
-Online poster shop with a custom-print studio: customers upload their own artwork, style it, preview it in a room mockup and order it as a print. Prices are recomputed on the server and each order is saved in one database transaction. The staff admin covers products, orders with CSV export, a studio production queue, discounts and an audit log, protected by Postgres row-level security, staff roles and mandatory TOTP 2FA.
+`C#` `ASP.NET Core` `.NET 10` `Dapper` `MySQL` `xUnit` `Testcontainers` `Docker` `GitHub Actions`
 
-`Next.js 16` `React 19` `TypeScript` `Supabase` `Postgres RLS` `Vercel Blob` `Vitest` `GitHub Actions`
+### 🏠 RealEstate Marketplace · [Live demo](https://realestate-orpin-eight-16.vercel.app) · [Code](https://github.com/iligashi/realestate)
+
+<a href="https://realestate-orpin-eight-16.vercel.app"><img src="https://raw.githubusercontent.com/iligashi/realestate/main/docs/screenshots/home.png" alt="RealEstate Marketplace" width="100%"></a>
+
+Full-stack property marketplace for buyers, sellers, renters, agents and admins: listings with search, real-time chat, viewing bookings, a wishlist, seller analytics and admin moderation. httpOnly-cookie sessions, CSRF protection, input sanitizing, participant-checked real-time rooms, and an automated Jest suite (API and Socket.IO) running in CI. Deployed on Vercel, Render and MongoDB Atlas.
+
+`React` `Vite` `Tailwind` `Express` `MongoDB` `Socket.IO` `Jest` `Docker` `GitHub Actions`
 
 ### More projects
 
@@ -81,7 +91,7 @@ Online poster shop with a custom-print studio: customers upload their own artwor
 | [**Flux Dekor**](https://github.com/iligashi/flux-dekor) · [live](https://flux-dekor.com) | Production e-commerce platform for a furniture and home-goods retailer in Kosovo: storefront, checkout with server-side pricing and atomic stock, and an admin back office with revenue dashboard | Next.js 16 · TypeScript · Supabase · Postgres RLS |
 | [**DiasporaConnect**](https://github.com/iligashi/albanian-diaspora-app-ka) · [live](https://v0-new-project-o1tgmu4ozsm.vercel.app) | Three-sided marketplace for people abroad to pay bills, send gifts and book home services for family in Kosovo, with shared family wallets, recurring plans and photo proof | Next.js 15 · React 19 · TypeScript · MongoDB |
 | [**Programuesi i Veturave**](https://github.com/iligashi/programuesi-i-veturave) · [live](https://programuesiiveturave.netlify.app) | Bilingual site for a car-coding business, with type-checked translations, URL-based filters, SEO structured data and accessibility linting | React · TypeScript · Vite · Tailwind |
-| [**Services Marketplace**](https://github.com/iligashi/Services-Marketplace) | Local services marketplace with an API, admin dashboard and mobile app | Express · MySQL · Redis · React Native/Expo |
+| [**Services Marketplace**](https://github.com/iligashi/Services-Marketplace) | Local services marketplace with job bidding, Stripe escrow (manual capture, retry-safe release), an admin dashboard and a mobile app | Express · MySQL · Redis · Stripe · React Native/Expo |
 | [**EduCore LMS & DMS**](https://github.com/iligashi/EduCore) | Learning and document management system with live updates and analytics | React · TypeScript · Express · MySQL · MongoDB |
 
 ### 🏢 Client websites (Nexora Agency)
